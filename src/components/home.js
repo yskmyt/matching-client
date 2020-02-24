@@ -35,7 +35,7 @@ let listItems = items.items.map((item) =>
 export default class Home extends React.Component {
   render() {
     return (
-			<div>
+			<div  style={{backgroundColor:"#ffffcc"}}>
 				<Header />
 				<Body />
 				<Footer />
@@ -47,7 +47,7 @@ export default class Home extends React.Component {
 class Body extends React.Component {
   render() {
     return (
-      <Container style={{maxWidth: "none", backgroundColor:"#ffffcc"}}>
+      <Container style={{maxWidth: "none"}}>
         <Row>
           <Col xl={2}>
 					<Sub />
