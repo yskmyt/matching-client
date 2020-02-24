@@ -9,9 +9,26 @@ import  {
 import items from "../data.json"
 
 let listItems = items.items.map((item) =>
-	<Col xl={4} style={{backgroundColor:"blue", height: "200px"}}>
-		<h2>{item.title}</h2>
-		<p>{item.name}</p>
+	<Col  xl={4}>
+		<Container className="item">
+			<Row className="item-image">
+				<Col xl={12}>
+					IMAGE
+				</Col>
+			</Row>
+			<Row className="item-top">
+				<Col xl={12}>
+					TITLE
+					<h2>{item.title}</h2>
+				</Col>
+			</Row>
+			<Row className="item-bottom">
+				<Col xl={12}>
+					USER
+					<h3>{item.name}</h3>
+				</Col>
+			</Row>
+		</Container>
 	</Col>
 	);
 
@@ -32,10 +49,10 @@ class Body extends React.Component {
     return (
       <Container style={{maxWidth: "none", backgroundColor:"#ffffcc"}}>
         <Row>
-          <Col xl={3}>
+          <Col xl={2}>
 					<Sub />
 				</Col>
-          <Col xl={9}>
+          <Col xl={10}>
 					<Main  items= { items } />
 				</Col>
         </Row>

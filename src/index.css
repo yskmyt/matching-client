@@ -15,3 +15,24 @@ code {
 .navbar {
   background-color: #FF6666;
 }
+
+.item {
+  margin-top: 30px;
+  height: 300px;
+  text-align: center;
+}
+
+.item-image {
+  background-color: gray;
+  height: 100px;
+}
+
+.item-top {
+  background-color: white;
+  height: 100px;
+}
+
+.item-bottom {
+  background-color: gray;
+  height: 100px;
+}
