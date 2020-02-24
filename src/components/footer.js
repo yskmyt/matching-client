@@ -3,13 +3,9 @@ import React from 'react';
 export default class Footer extends React.Component {
   render() {
     return (
-      <footer style={{
-        backgroundColor: "red",
-        textAlign:"center",
-        height: "50px"
-      }}>
-        <h2>THIS IS FOOTER</h2>
-      </footer>
+      <nav className="navbar navbar-dark bg-secondary fixed-bottom">
+        <p>THIS IS FOOTER</p>
+      </nav>
     );
   }
 }

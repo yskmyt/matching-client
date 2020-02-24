@@ -7,7 +7,7 @@ import  {
 	Col,
 } from "react-bootstrap"
 
-export default class About extends React.Component {
+export default class User extends React.Component {
   render() {
     return (
 			<div>
@@ -24,8 +24,10 @@ class Body extends React.Component {
     return (
       <Container style={{maxWidth: "none"}}>
         <Row>
-          <Col xl={3} style={{backgroundColor:"green", height:"500px"}}></Col>
-          <Col xl={9} style={{backgroundColor:"yellow", height:"500px"}}>THIS IS ABOUT</Col>
+          <Col xl={3} style={{backgroundColor:"green", height:"500px"}}>
+						<p>THIS IS USER</p>
+				</Col>
+          <Col xl={9} style={{backgroundColor:"yellow", height:"500px"}}></Col>
         </Row>
       </Container>
     );
